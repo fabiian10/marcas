@@ -11,9 +11,10 @@
                     <span class="flex h-10 w-10 items-center justify-center rounded-md">
                         <x-app-logo-icon class="me-2 h-7 fill-current text-white" />
                     </span>
-                    {{ config('app.name', 'Laravel') }}
+                    Sistema de Gestión de Marcas Registradas
                 </a>
 
+                <img src="{{ asset('images/loguito.jpg') }}" alt="Logo" class="absolute opacity-50 top-0 left-0 w-full h-full object-cover">
                 @php
                     [$message, $author] = str(Illuminate\Foundation\Inspiring::quotes()->random())->explode('-');
                 @endphp

@@ -7,6 +7,8 @@
 @source '../../vendor/livewire/flux/stubs/**/*.blade.php';
 
 @custom-variant dark (&:where(.dark, .dark *));
+@custom-variant blue (&:where(.blue, .blue *));
+@custom-variant green (&:where(.green, .green *));
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -33,6 +35,76 @@
         --color-accent: var(--color-white);
         --color-accent-content: var(--color-white);
         --color-accent-foreground: var(--color-neutral-800);
+    }
+    /* Tema Azul */
+    .blue {
+        --background: oklch(0.88 0.04 260);      /* Fondo azul claro sutil */
+        --foreground: oklch(0.25 0.02 260);      /* Texto gris-azulado oscuro */
+        --card: oklch(0.85 0.04 260);            /* Cards un poco más oscuros */
+        --card-foreground: oklch(0.25 0.02 260); /* Igual que foreground */
+        --popover: oklch(0.85 0.04 260);         /* Popovers igual que cards */
+        --popover-foreground: oklch(0.25 0.02 260); /* Igual que foreground */
+        --primary: oklch(0.55 0.2 260);          /* Azul elegante para destacados */
+        --primary-foreground: oklch(0.95 0.02 260); /* Blanco azulado */
+        --secondary: oklch(0.75 0.05 260);       /* Azul medio claro para secundarios */
+        --secondary-foreground: oklch(0.25 0.02 260); /* Texto oscuro */
+        --muted: oklch(0.7 0.03 260);            /* Gris-azulado para elementos suaves */
+        --muted-foreground: oklch(0.5 0.02 260); /* Texto gris medio */
+        --accent: oklch(0.65 0.15 280);          /* Azul-violeta para acentos */
+        --accent-foreground: oklch(0.95 0.02 260); /* Blanco azulado */
+        --destructive: oklch(0.6 0.15 25);       /* Rojo suave para acciones destructivas */
+        --destructive-foreground: oklch(0.95 0.02 260); /* Blanco azulado */
+        --border: oklch(0.65 0.05 260);          /* Bordes azulados sutiles */
+        --input: oklch(0.85 0.04 260);           /* Campos de entrada como cards */
+        --ring: oklch(0.55 0.1 260);             /* Anillo de enfoque azul */
+        --chart-1: oklch(0.55 0.2 260);          /* Azul principal para gráficos */
+        --chart-2: oklch(0.65 0.15 280);         /* Azul-violeta */
+        --chart-3: oklch(0.75 0.1 240);          /* Azul más claro */
+        --chart-4: oklch(0.6 0.15 300);          /* Azul-púrpura */
+        --chart-5: oklch(0.7 0.12 220);          /* Cian suave */
+        --sidebar: oklch(0.75 0.12 260);         /* Sidebar azul claro */
+        --sidebar-foreground: oklch(0.25 0.02 260); /* Texto oscuro */
+        --sidebar-primary: oklch(0.55 0.2 260);  /* Igual que primary */
+        --sidebar-primary-foreground: oklch(0.95 0.02 260); /* Blanco azulado */
+        --sidebar-accent: oklch(0.65 0.15 280);  /* Igual que accent */
+        --sidebar-accent-foreground: oklch(0.95 0.02 260); /* Blanco azulado */
+        --sidebar-border: oklch(0.65 0.05 260);  /* Bordes como global */
+        --sidebar-ring: oklch(0.55 0.1 260);     /* Anillo como global */
+    }
+    /* Tema Verde */
+    .green {
+        --background: oklch(0.88 0.08 140);      /* Fondo verde claro sutil */
+        --foreground: oklch(0.25 0.02 140);      /* Texto gris-verdoso oscuro */
+        --card: oklch(0.85 0.08 140);            /* Cards un poco más oscuros */
+        --card-foreground: oklch(0.25 0.02 140); /* Igual que foreground */
+        --popover: oklch(0.85 0.08 140);         /* Popovers igual que cards */
+        --popover-foreground: oklch(0.25 0.02 140); /* Igual que foreground */
+        --primary: oklch(0.55 0.18 140);         /* Verde elegante para destacados */
+        --primary-foreground: oklch(0.95 0.02 140); /* Blanco verdoso */
+        --secondary: oklch(0.75 0.06 140);       /* Verde medio claro para secundarios */
+        --secondary-foreground: oklch(0.25 0.02 140); /* Texto oscuro */
+        --muted: oklch(0.7 0.04 140);            /* Gris-verdoso para elementos suaves */
+        --muted-foreground: oklch(0.5 0.02 140); /* Texto gris medio */
+        --accent: oklch(0.65 0.15 160);          /* Verde más claro para acentos */
+        --accent-foreground: oklch(0.95 0.02 140); /* Blanco verdoso */
+        --destructive: oklch(0.6 0.15 25);       /* Rojo suave para acciones destructivas */
+        --destructive-foreground: oklch(0.95 0.02 140); /* Blanco verdoso */
+        --border: oklch(0.65 0.05 140);          /* Bordes verdes sutiles */
+        --input: oklch(0.85 0.08 140);           /* Campos de entrada como cards */
+        --ring: oklch(0.55 0.1 140);             /* Anillo de enfoque verde */
+        --chart-1: oklch(0.55 0.18 140);         /* Verde principal para gráficos */
+        --chart-2: oklch(0.65 0.15 160);         /* Verde más claro */
+        --chart-3: oklch(0.75 0.1 120);          /* Verde-amarillo */
+        --chart-4: oklch(0.6 0.15 180);          /* Verde-azulado */
+        --chart-5: oklch(0.7 0.12 100);          /* Verde lima */
+        --sidebar: oklch(0.75 0.12 140);         /* Sidebar verde claro */
+        --sidebar-foreground: oklch(0.25 0.02 140); /* Texto oscuro */
+        --sidebar-primary: oklch(0.55 0.18 140); /* Igual que primary */
+        --sidebar-primary-foreground: oklch(0.95 0.02 140); /* Blanco verdoso */
+        --sidebar-accent: oklch(0.65 0.15 160);  /* Igual que accent */
+        --sidebar-accent-foreground: oklch(0.95 0.02 140); /* Blanco verdoso */
+        --sidebar-border: oklch(0.65 0.05 140);  /* Bordes como global */
+        --sidebar-ring: oklch(0.55 0.1 140);     /* Anillo como global */
     }
 }
 
